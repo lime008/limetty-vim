@@ -9,22 +9,22 @@
 " User must set this variable in .vimrc
 
 " GUI color definitions
-let s:gui00        = "292640"
-let s:gui01        = "33304a"
-let s:gui02        = "43454f"
-let s:gui03        = "7f7888"
-let s:gui04        = "a5a5a9"
-let s:gui05        = "f3ffb5"
-let s:gui06        = "ffbe3b"
-let s:gui07        = "f3ffb5"
-let s:gui08        = "e03d3d"
-let s:gui09        = "ffbe3b"
-let s:gui0A        = "ffbe3b"
-let s:gui0B        = "d9ed00"
-let s:gui0C        = "61e8c6"
-let s:gui0D        = "2ec2e6"
-let s:gui0E        = "ee508a"
-let s:gui0F        = "ffbe3b"
+let s:gui00        = "292640" " black
+let s:gui01        = "33304a" " light black
+let s:gui02        = "43454f" " dark gray
+let s:gui03        = "7f7888" " gray
+let s:gui04        = "a5a5a9" " light gray
+let s:gui05        = "f3ffb5" " pale lime
+let s:gui06        = "ffbe3b" " orange
+let s:gui07        = "f3ffb5" " pale lime
+let s:gui08        = "F2545B" "e03d3d" " red
+let s:gui09        = "ffbe3b" " orange
+let s:gui0A        = "ffbe3b" " orange
+let s:gui0B        = "d9ed00" " lime
+let s:gui0C        = "53e0ad" "61e8c6" " tiffany
+let s:gui0D        = "2ec2e6" " light blue
+let s:gui0E        = "ee508a" " pink
+let s:gui0F        = "ffbe3b" " orange
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -51,51 +51,6 @@ else
   let s:cterm06        = "13"
   let s:cterm09        = "09"
   let s:cterm0F        = "14"
-endif
-
-" Neovim terminal colours
-if has("nvim")
-  let g:terminal_color_0 =  "#292640"
-  let g:terminal_color_1 =  "#e03d3d"
-  let g:terminal_color_2 =  "#d9ed00"
-  let g:terminal_color_3 =  "#ffbe3b"
-  let g:terminal_color_4 =  "#2ec2e6"
-  let g:terminal_color_5 =  "#ee508a"
-  let g:terminal_color_6 =  "#61e8c6"
-  let g:terminal_color_7 =  "#f3ffb5"
-  let g:terminal_color_8 =  "#33304a"
-  let g:terminal_color_9 =  "#e03d3d"
-  let g:terminal_color_10 = "#d9ed00"
-  let g:terminal_color_11 = "#ffbe3b"
-  let g:terminal_color_12 = "#00d2f6"
-  let g:terminal_color_13 = "#f881ad"
-  let g:terminal_color_14 = "#61e8c6"
-  let g:terminal_color_15 = "#f3ffb5"
-  let g:terminal_color_background = g:terminal_color_0
-  let g:terminal_color_foreground = g:terminal_color_5
-  if &background == "light"
-    let g:terminal_color_background = g:terminal_color_7
-    let g:terminal_color_foreground = g:terminal_color_2
-  endif
-elseif has("terminal")
-  let g:terminal_ansi_colors = [
-        \ "#ffbe3d",
-        \ "#e03d3d",
-        \ "#d9ed00",
-        \ "#ffbe3b",
-        \ "#2ec2e6",
-        \ "#ee508a",
-        \ "#61e8c6",
-        \ "#f3ffb5",
-        \ "#33304a",
-        \ "#e03d3d",
-        \ "#d9ed00",
-        \ "#ffbe3b",
-        \ "#00d2f6",
-        \ "#f881ad",
-        \ "#61e8c6",
-        \ "#f3ffb5",
-        \ ]
 endif
 
 " Theme setup
@@ -142,8 +97,8 @@ call <sid>hi("Directory",     s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("Error",         s:gui00, s:gui08, s:cterm00, s:cterm08, "", "")
 call <sid>hi("ErrorMsg",      s:gui08, s:gui00, s:cterm08, s:cterm00, "", "")
 call <sid>hi("Exception",     s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("FoldColumn",    s:gui0C, s:gui01, s:cterm0C, s:cterm01, "", "")
-call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
+call <sid>hi("FoldColumn",    s:gui0C, s:gui00, s:cterm0C, s:cterm00, "", "")
+call <sid>hi("Folded",        s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
 call <sid>hi("Italic",        "", "", "", "", "none", "")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "", "")
@@ -164,8 +119,8 @@ call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "", "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
-call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
-call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
+call <sid>hi("LineNr",        s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
+call <sid>hi("SignColumn",    s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none", "")
 call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", "")
@@ -187,20 +142,20 @@ call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
-call <sid>hi("Delimiter",    s:gui0F, "", s:cterm0F, "", "", "")
+call <sid>hi("Delimiter",    s:gui07, "", s:cterm07, "", "", "")
 call <sid>hi("Float",        s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Function",     s:gui0D, "", s:cterm0D, "", "", "")
-call <sid>hi("Identifier",   s:gui08, "", s:cterm08, "", "none", "")
+call <sid>hi("Identifier",   s:gui0C, "", s:cterm0C, "", "none", "")
 call <sid>hi("Include",      s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("Keyword",      s:gui0E, "", s:cterm0E, "", "", "")
-call <sid>hi("Label",        s:gui0A, "", s:cterm0A, "", "", "")
+call <sid>hi("Label",        s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("Number",       s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Operator",     s:gui05, "", s:cterm05, "", "none", "")
 call <sid>hi("PreProc",      s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("Repeat",       s:gui0A, "", s:cterm0A, "", "", "")
-call <sid>hi("Special",      s:gui0C, "", s:cterm0C, "", "", "")
+call <sid>hi("Special",      s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("SpecialChar",  s:gui0F, "", s:cterm0F, "", "", "")
-call <sid>hi("Statement",    s:gui08, "", s:cterm08, "", "", "")
+call <sid>hi("Statement",    s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("StorageClass", s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("String",       s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("Structure",    s:gui0E, "", s:cterm0E, "", "", "")
@@ -214,7 +169,7 @@ call <sid>hi("cOperator",   s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("cPreCondit",  s:gui0E, "", s:cterm0E, "", "", "")
 
 " C# highlighting
-call <sid>hi("csClass",                 s:gui0A, "", s:cterm0A, "", "", "")
+call <sid>hi("csClass",                 s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("csAttribute",             s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("csModifier",              s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("csType",                  s:gui08, "", s:cterm08, "", "", "")
@@ -256,10 +211,10 @@ call <sid>hi("gitcommitDiscardedFile",  s:gui08, "", s:cterm08, "", "bold", "")
 call <sid>hi("gitcommitSelectedFile",   s:gui0B, "", s:cterm0B, "", "bold", "")
 
 " GitGutter highlighting
-call <sid>hi("GitGutterAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
-call <sid>hi("GitGutterChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
-call <sid>hi("GitGutterDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
-call <sid>hi("GitGutterChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "", "")
+call <sid>hi("GitGutterAdd",     s:gui0B, s:gui00, s:cterm0B, s:cterm00, "", "")
+call <sid>hi("GitGutterChange",  s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
+call <sid>hi("GitGutterDelete",  s:gui08, s:gui00, s:cterm08, s:cterm00, "", "")
+call <sid>hi("GitGutterChangeDelete",  s:gui0E, s:gui00, s:cterm0E, s:cterm00, "", "")
 
 " HTML highlighting
 call <sid>hi("htmlBold",    s:gui0A, "", s:cterm0A, "", "", "")
