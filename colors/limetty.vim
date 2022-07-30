@@ -9,22 +9,22 @@
 " User must set this variable in .vimrc
 
 " GUI color definitions
-let s:gui00        = "292640" " black
-let s:gui01        = "33304a" " light black
-let s:gui02        = "43454f" " dark gray
-let s:gui03        = "7f7888" " gray
-let s:gui04        = "a5a5a9" " light gray
-let s:gui05        = "f3ffb5" " pale lime
-let s:gui06        = "ffbe3b" " orange
-let s:gui07        = "f3ffb5" " pale lime
-let s:gui08        = "f2545b" "e03d3d" " red
-let s:gui09        = "ffbe3b" " orange
-let s:gui0A        = "ffbe3b" " orange
-let s:gui0B        = "d9ed00" " lime
-let s:gui0C        = "53e0ad" "61e8c6" " tiffany
-let s:gui0D        = "2ec2e6" " light blue
-let s:gui0E        = "ee508a" " pink
-let s:gui0F        = "ffbe3b" " orange
+let s:gui00        = "292640"
+let s:gui01        = "33304a"
+let s:gui02        = "594671"
+let s:gui03        = "7f7888"
+let s:gui04        = "a5a5a9"
+let s:gui05        = "eeff96"
+let s:gui06        = "ffbe3b"
+let s:gui07        = "eeff96"
+let s:gui08        = "f2545b"
+let s:gui09        = "ffbe3b"
+let s:gui0A        = "ffbe3b"
+let s:gui0B        = "d9ed00"
+let s:gui0C        = "53e0ad"
+let s:gui0D        = "2ec2e6"
+let s:gui0E        = "ee508a"
+let s:gui0F        = "d46991"
 
 " Terminal color definitions
 let s:cterm00        = "00"

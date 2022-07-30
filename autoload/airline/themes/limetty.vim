@@ -5,21 +5,21 @@
 "
 "   limetty             XTERM
 let s:base00 = '#292640' "236
-let s:base01 = '#34353e' "237
-let s:base02 = '#43454f' "238
-let s:base03 = '#78787e' "244
+let s:base01 = '#33304a' "237
+let s:base02 = '#594671' "238
+let s:base03 = '#7f7888' "244
 let s:base04 = '#a5a5a9' "248
 let s:base05 = '#e2e4e5' "254
 let s:base06 = '#eff0eb' "255
-let s:base07 = '#f3ffb5' "15
+let s:base07 = '#eeff96' "15
 let s:base08 = '#e03d3d' "203
-let s:base09 = '#ff9f43' "215
-let s:base0A = '#ffbe3b' "229
+let s:base09 = '#ffbe3b' "215
+let s:base0A = '#cea85d' "229
 let s:base0B = '#d9ed00' "84
 let s:base0C = '#53e0ad' "123
 let s:base0D = '#2ec2e6' "81
 let s:base0E = '#ee508a' "205
-let s:base0F = '#b2643c' "131
+let s:base0F = '#d46991' "131
 
 " Normal mode
 "          [ guifg , guibg , ctermfg , ctermbg , opts ]
@@ -119,3 +119,4 @@ let g:airline#themes#limetty#palette.insert_paste.airline_warning = WI
 let g:airline#themes#limetty#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 let g:airline#themes#limetty#palette.inactive_modified = {
     \ 'airline_c': [ s:N4[0] , ''      , s:N4[1] , ''      , ''     ] }
+
