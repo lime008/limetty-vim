@@ -4,7 +4,7 @@ local colors = {
 	black = '#292640',
 	white = '#eeff96',
 	red = '#f2545b',
-	eucalyptus = '{color "eucalyptus"}',
+	eucalyptus = '#53e0ad',
 	grey = '#594671',
 	pearl = '#a5a5a9',
 }
